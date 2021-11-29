@@ -57,25 +57,23 @@ links.forEach(
 
 const addLink = document.querySelector("nav");
 
-//Creates a new link
-const newAtag = document.createElement("a");
-//Sets the text
-newAtag.textContent = "Outreach";
-//Style
-newAtag.style.color = "green";
-//sets the url
-newAtag.href = "#";
-//Adds the new link to the end of the nav
-addLink.appendChild(newAtag);
+// //Creates a new link
+// const newAtag = document.createElement("a");
+// //Sets the text
+// newAtag.textContent = "Outreach";
+// //sets the url
+// newAtag.href = "#";
+// //Adds the new link to the end of the nav
+// addLink.appendChild(newAtag);
 
-//Creates a new link
-const newH3 = document.createElement("h3");
-//Sets the text
-newH3.textContent = "Navigation";
-//Style
-newH3.style.fontSize = "20px";
-//Adds the new link to the beginning of the nav
-addLink.prepend(newH3);
+// //Creates a new link
+// const newH3 = document.createElement("h3");
+// //Sets the text
+// newH3.textContent = "Navigation";
+// //Style
+// newH3.style.fontSize = "20px";
+// //Adds the new link to the beginning of the nav
+// addLink.prepend(newH3);
 
 //DOM is Awesome
 const ctaH1 = document.querySelectorAll("h1");
@@ -114,3 +112,7 @@ pTag[4].textContent = siteContent["main-content"]["vision-content"];
 pTag[5].textContent = siteContent["contact"]["address"];
 pTag[6].textContent = siteContent["contact"]["phone"];
 pTag[7].textContent = siteContent["contact"]["email"];
+
+//Footer
+const footer = document.querySelector("footer a");
+footer.textContent = siteContent["footer"]["copyright"];
