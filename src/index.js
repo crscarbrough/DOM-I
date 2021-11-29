@@ -48,32 +48,12 @@ const siteContent = {
 console.log("project wired!");
 
 //Condensed way to return the entire nav
-const links = document.querySelectorAll("a");
+const links = document.querySelectorAll("nav a");
 
-links.forEach(
-  (currentValue, i) =>
-    (currentValue.textContent = Object.values(siteContent.nav)[i])
-);
-
-const addLink = document.querySelector("nav");
-
-// //Creates a new link
-// const newAtag = document.createElement("a");
-// //Sets the text
-// newAtag.textContent = "Outreach";
-// //sets the url
-// newAtag.href = "#";
-// //Adds the new link to the end of the nav
-// addLink.appendChild(newAtag);
-
-// //Creates a new link
-// const newH3 = document.createElement("h3");
-// //Sets the text
-// newH3.textContent = "Navigation";
-// //Style
-// newH3.style.fontSize = "20px";
-// //Adds the new link to the beginning of the nav
-// addLink.prepend(newH3);
+links.forEach((link, i) => {
+  link.textContent = Object.values(siteContent.nav)[i];
+  link.style.fontStyle = "italic";
+});
 
 //DOM is Awesome
 const ctaH1 = document.querySelectorAll("h1");
@@ -94,13 +74,13 @@ const logoImg = document.getElementById("logo-img");
 logoImg.src = siteContent.images["logo-img"];
 
 //H4 Titles
-const topH4 = document.querySelectorAll("h4");
-topH4[0].textContent = siteContent["main-content"]["features-h4"];
-topH4[1].textContent = siteContent["main-content"]["about-h4"];
-topH4[2].textContent = siteContent["main-content"]["services-h4"];
-topH4[3].textContent = siteContent["main-content"]["product-h4"];
-topH4[4].textContent = siteContent["main-content"]["vision-h4"];
-topH4[5].textContent = siteContent["contact"]["contact-h4"];
+const h4Title = document.querySelectorAll("h4");
+h4Title[0].textContent = siteContent["main-content"]["features-h4"];
+h4Title[1].textContent = siteContent["main-content"]["about-h4"];
+h4Title[2].textContent = siteContent["main-content"]["services-h4"];
+h4Title[3].textContent = siteContent["main-content"]["product-h4"];
+h4Title[4].textContent = siteContent["main-content"]["vision-h4"];
+h4Title[5].textContent = siteContent["contact"]["contact-h4"];
 
 //Paragraphs
 const pTag = document.querySelectorAll("p");
@@ -116,3 +96,4 @@ pTag[7].textContent = siteContent["contact"]["email"];
 //Footer
 const footer = document.querySelector("footer a");
 footer.textContent = siteContent["footer"]["copyright"];
+footer.style.fontWeight = "bold";

@@ -37,13 +37,13 @@ Inside `src/index.js` there is declared an object literal containing all the dat
 
 ### Add class names
 
-- [ ] Give the anchor tags _inside the nav_ an italic style by adding the classname `italic` to them alone.
-- [ ] Give the anchor tag _inside the footer_ a bolder appearence by adding the classname `bold` to it alone.
+- [x] Give the anchor tags _inside the nav_ an italic style by adding the classname `italic` to them alone.
+- [x] Give the anchor tag _inside the footer_ a bolder appearence by adding the classname `bold` to it alone.
 
 ### Add image sources
 
-- [ ] Make the img tags on the page display the correct images by editing their `src` attribute.
-- [ ] Find the correct URLs for the images inside the data object in `src/index.js`.
+- [x] Make the img tags on the page display the correct images by editing their `src` attribute.
+- [x] Find the correct URLs for the images inside the data object in `src/index.js`.
 
 ## Submission Format
 
